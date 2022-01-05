@@ -1,0 +1,11 @@
+x=float(input())
+
+def f(x):
+    return x**2-10
+print(f(x))
+def f1(x):
+    return 2*x
+print(f1(x))
+for i in range(100):
+    x=x-f(x)/f1(x)
+print(x)
